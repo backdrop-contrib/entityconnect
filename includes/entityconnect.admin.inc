@@ -20,9 +20,8 @@ function _entityconnect_admin_form($form, &$form_state) {
     '#default_value' => $config->get('entityconnect_cache_lifetime'),
     '#description' => t('Set cache lifetime in second.<br />
                         Set to 0 to CACHE_PERMANENT.'),
-    '#element_validate' => array('element_validate_integer'),
     '#weight' => '0',
-    '#type' => 'textfield',
+    '#type' => 'number',
     '#title' => t('Entity Connect cache lifetime'),
   );
 
